@@ -1,152 +1,125 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banderas</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 3</title>
+
     <style media="screen" type="text/css">
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    .flag {
-      width: 500px;
-      height: 300px;
-    }
-    .flag__container {
-      border: 1px solid;
-      margin: 30px;
-    }
-    .flag__spain {
-      height: 100%;
-    }
-    .flag__spain--red {
-      background-color: red;
-      height: 30%;
-    }
-    .flag__spain--yellow {
-      background-color: yellow;
-      height: 40%;
-    }
-    .flag__denmark {
-      background: red;
-      height: 100%;
-      position: relative;
-    }
-    .flag__denmark--white {
-      background: white;
-    }
-    .flag__denmark--v {
-      width: 30px;
-      height: 100%;
-      margin-left: 125px;
-    }
-    .flag__denmark--h {
-      width: 100%;
-      height: 30px;
-      position: absolute;
-      display: block;
-      top: 135px;
-      margin-left: 0;
-      left: 0;
-      z-index: 1;
-    }
-    .flag__emirates {
-      background: red;
-      height: 100%;
-      position: relative;
-    }
 
-    .flag__emirates--black {
-      background: black;
-      width: 75%;
-      height: 33%;
-      float: right;
-    }
+        .flags {
+            width: 300px;
+            height: 200px;
+            border: 1px solid;
+            border-color: black;
+            margin: 5px;
+            display: inline-block;
+            box-sizing: border-box;
+            
+        }
 
-    .flag__emirates--green {
-      background: green;
-      width: 75%;
-      height: 33%;
-      float: right;
-    }
+        .spain {
+            background-color: red;
+        }
 
-    .flag__emirates--white {
-      background: white;
-      width: 75%;
-      height: 34%;
-      float: right;
-    }
+        .spain__red {
+            background-color: red;
+            height: 30%;
+        }
 
-    .flag__emirates--nose {
-      width: 0px;
-      height: 0px;
-      border-right: 60px solid transparent;
-      border-top: 60px solid red;
-      border-left: 60px solid red;
-      border-bottom: 60px solid red;
-      border-top-left-radius: 60px;
-      border-top-right-radius: 60px;
-      border-bottom-left-radius: 60px;
-      border-bottom-right-radius: 60px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+        .spain__yellow {
+            background-color: yellow;
+            height: 40%;
+        }
 
-    .flag__japan {
-      height: 100%;
-      background-color: white;
-      position: relative;
-    }
-    .flag__japan--circle {
-      width: 120px;
-      height: 120px;
-      /* margin-left: auto; */
-      /* margin-right: auto; */
-      /* margin-top: 100px; */
-      border-radius: 50%;
-      background-color: red;
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  </style>
+        .denmark {
+            background-color: red;
+            position: relative;
+            
+        }
+
+        .denmark__red {
+            height: 45%;
+            width: 45%;
+            
+        }
+
+        .denmark__white1 {
+            width: 298px;
+            border-bottom: 20px solid white; 
+            height: 45%;
+            position: absolute;
+            top: 0;
+        }
+
+        .denmark__white2 {
+            border-right: 20px solid white; 
+            height: 198px;
+            position: absolute;
+            top: 0;
+            width: 100px;
+        }
+
+        .emirates {
+            background-color: red;
+        }
+
+        .emirates__red {
+            background-color: red;
+            width: 20%;
+        }
+
+        .emirates__green {
+            background-color: green;
+            height: 33.3%;
+            width: 75%;
+            float: right;
+        }
+
+        .emirates__white {
+            background-color: white;
+            height: 33.3%;
+            width: 75%;
+            float: right;
+        }
+
+        .emirates__black {
+            background-color: black;
+            height: 33.3%;
+            width: 75%;
+            float: right;
+        }
+
+        .japan {
+            background-image: radial-gradient(circle, red 33%, white 33%, white);
+        }
+    </style>
 </head>
+
 <body>
-  <div class="flag">
-    <!-- Españita -->
-    <div class="flag__container flag__spain">
-      <div class="flag__spain--red"></div>
-      <div class="flag__spain--yellow"></div>
-      <div class="flag__spain--red"></div>
-    </div>
 
-    <!-- Dinamarca -->
-    <div class="flag__container flag__denmark">
-      <div class="flag__denmark flag__denmark--white flag__denmark--v"></div>
-      <div class="flag__denmark flag__denmark--white flag__denmark--h"></div>
-    </div>
+    <section class="flags spain">
+        <div class="spain__red"></div>
+        <div class="spain__yellow"></div>
+    </section>
 
-    <!-- Emiratos -->
-    <div class="flag__container flag__emirates">
-      <div class="flag__emirates--green"></div>
+    <section class="flags denmark">
+        <div class="denmark__red"></div>
+        <div class="denmark__white1"></div>
+        <div class="denmark__white2"></div>
+    </section>
 
-      <div class="flag__emirates--white"></div>
-      <div class="flag__emirates--black"></div>
-      <div class="flag__emirates--nose"></div>
-    </div>
+    <section class="emirates flags">
+        <div class="emirates__green"></div>
+        <div class="emirates__white"></div>
+        <div class="emirates__black"></div>
+    </section>
 
-    <!-- Japon -->
-    <div class="flag__container flag__japan">
-      <div class="flag__japan--circle"></div>
-    </div>
-  </div>
+    <section class=" flags japan"></section>
+
+
 </body>
+
 </html>
